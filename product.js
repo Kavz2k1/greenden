@@ -23,9 +23,13 @@ closenav.addEventListener("click", function()
 {
     
     let enteredValue = event.target.value.toUpperCase()
+
     for(let count=0; count<prodlist.length; count++)
 {
-    let productname = prodlist[count].querySelector("h1").textContent
+    let productnameElement = prodlist[count].querySelector("h1");
+        if (!productnameElement) continue;  // Skip if h1 is missing
+
+    let productname = productnameElement.textContent.toUpperCase()
  
   
   if(productname.toUpperCase().indexOf(enteredValue)<0)  
