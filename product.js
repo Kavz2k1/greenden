@@ -19,7 +19,7 @@ closenav.addEventListener("click", function()
     console.log(prodlist)
    
 
-    search.addEventListener("keyup", function()
+    search.addEventListener("keyup", function(event)
 {
     
     let enteredValue = event.target.value.toUpperCase()
