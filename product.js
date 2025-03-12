@@ -30,10 +30,10 @@ closenav.addEventListener("click", function()
   
   if(productname.toUpperCase().indexOf(enteredValue)<0)  
   {
-    prodlist[count].style.display="none"
+    prodlist[count].style.display="none";
   }
   else{
-    prodlist[count].style.display="block"
+    prodlist[count].style.display="block";
   }
 }
    
